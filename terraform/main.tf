@@ -52,3 +52,8 @@ resource "google_compute_instance_group_manager" "default2-staging" {
   target_size = 1
 }
 
+resource "google_storage_bucket" "image-store" {
+  project  = "comp698-vak1003"
+  name     = "comp698-final"
+  location = "us-central1"
+}
