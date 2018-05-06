@@ -11,7 +11,7 @@ func TestHandler(t *testing.T) {
 	response := httptest.NewRecorder()
 	hello(response, request)
 
-	expected := "Hello, UNH!"
+	expected := "Hello, summer!"
 	if response.Body.String() != expected {
 		t.Fatalf("Got: %s\nExpected: %s",
 			response.Body.String(), expected)
